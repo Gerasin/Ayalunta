@@ -1,0 +1,410 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {min-width: 1000px; font: 14px 'PT Serif', serif;}
+
+.menu {background: #9b7851; height: 79px; font-family: 'PT Serif Caption', serif; font-size: 14px; padding: 0; margin: 0;}
+    .menu li {display: block; width: 8.333333%; float: left; list-style: none;}
+        .menu li a {display: block; text-align: center; text-decoration: none; padding: 50px 0 0; height: 29px; color: #000; position: relative;}
+        .menu li a:hover {background: #c3a679;}
+            .menu li a:before {content: ' '; position: absolute; width: 38px; height: 38px; background: url(../img/menu.png) 0 0 no-repeat; top: 10px; left: 50%; margin-left: -19px;}
+            .menu li.li-1 a:before {background-position: 0 0;}
+            .menu li.li-2 a:before {background-position: -38px 0;}
+            .menu li.li-3 a:before {background-position: -76px 0;}
+            .menu li.li-4 a:before {background-position: -114px 0;}
+            .menu li.li-5 a:before {background-position: -152px 0;}
+            .menu li.li-6 a:before {background-position: -190px 0;}
+            .menu li.li-7 a:before {background-position: -228px 0;}
+            .menu li.li-8 a:before {background-position: -266px 0;}
+            .menu li.li-9 a:before {background-position: -304px 0;}
+            .menu li.li-10 a:before {background-position: -342px 0;}
+            .menu li.li-11 a:before {background-position: -380px 0;}
+            .menu li.li-12 a:before {background-position: -418px 0;}
+        .menu li.active a {background: #6f0014; color: #fff;}
+            .menu li.active.li-1 a:before {background-position: 0 0;}
+            .menu li.active.li-2 a:before {background-position: -38px -38px;}
+            .menu li.active.li-3 a:before {background-position: -76px -38px;}
+            .menu li.active.li-4 a:before {background-position: -114px -38px;}
+            .menu li.active.li-5 a:before {background-position: -152px -38px;}
+            .menu li.active.li-6 a:before {background-position: -190px -38px;}
+            .menu li.active.li-7 a:before {background-position: -228px -38px;}
+            .menu li.active.li-8 a:before {background-position: -266px -38px;}
+            .menu li.active.li-9 a:before {background-position: -304px -38px;}
+            .menu li.active.li-10 a:before {background-position: -342px -38px;}
+            .menu li.active.li-11 a:before {background-position: -380px -38px;}
+            .menu li.active.li-12 a:before {background-position: -418px -38px;}
+
+.wr {width: 908px; margin: 0 auto; position: relative; z-index: 10;}
+
+.symbol {position: relative; background: #f8f8f5; padding: 0 0 48px;}
+.symbol:before {content: ' '; position: absolute; top: 0 ;left: 0; width: 100%; height: 294px; z-index: 1;
+    background-color: #fdfdfb;
+    background-image: -webkit-linear-gradient(bottom, #f8f8f5, #d8d5d1 78%, #bebcb8);
+    background-image: -moz-linear-gradient(bottom, #f8f8f5, #d8d5d1 78%, #bebcb8);
+    background-image: -o-linear-gradient(bottom, #f8f8f5, #d8d5d1 78%, #bebcb8);
+    background-image: -ms-linear-gradient(bottom, #f8f8f5, #d8d5d1 78%, #bebcb8);
+    background-image: linear-gradient(to top, #f8f8f5, #d8d5d1 78%, #bebcb8);
+}
+    .logo {padding: 16px 0 28px; text-align: center;}
+        .logo img {vertical-align: top;}
+    .symbol-header {text-align: center;margin: 0 0 45px; font: normal normal 60px/60px 'PT Serif', serif;}
+        .symbol-header sup {vertical-align: top; font-size: 20px; position: relative; top: 10px;}
+    .symbol-tab {text-align: center;padding: 0 0 34px;}
+        .symbol-tab ul {display: inline-block; padding: 0; margin: 0; font-size: 14px; border: 1px solid #020303;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;}
+            .symbol-tab ul li {float: left; display: block; list-style: none;}
+            .symbol-tab ul li:first-child {border-right: 1px solid #020303;}
+                .symbol-tab ul li a {display: block; padding: 0 10px; height: 25px; line-height: 23px; text-decoration: none; color: #000;}
+                .symbol-tab ul li span {display: block; padding: 0 10px; height: 25px; line-height: 23px; text-decoration: none; color: #fff; background: #9b7851;}
+    .symbol-img {text-align: center; height: 908px; padding: 0 0 68px;}
+    .soc {text-align: center;}
+.symbol-info {position: relative; background: #f8f8f5;padding: 73px 0 45px;}
+.symbol-info:before {content: ' '; position: absolute; top: 0 ;left: 0; width: 100%; height: 392px; z-index: 1;
+    background-color: #fdfdfb;
+    background-image: -webkit-linear-gradient(bottom, #f8f8f5, #e4cba2);
+    background-image: -moz-linear-gradient(bottom, #f8f8f5, #e4cba2);
+    background-image: -o-linear-gradient(bottom, #f8f8f5, #e4cba2);
+    background-image: -ms-linear-gradient(bottom, #f8f8f5, #e4cba2);
+    background-image: linear-gradient(to top, #f8f8f5, #e4cba2);
+}
+    .symbol-info-head {text-align: center; width: 583px;margin: 0 auto 70px;}
+        .symbol-info-head h2 {font-size: 40px; font-weight: normal;padding: 0 0 15px; margin: 0;}
+        .symbol-info-head p {font-size: 17px; line-height: 27px; margin: 0 0 27px;}
+    .symbol-info dl {display: block; overflow: hidden;margin: 0 0 74px;padding-right: 52px;}
+        .symbol-info dl dt {float: left; display: block; width: 330px; }
+            .symbol-info dl dt img {max-width: 330px; vertical-align: top;}
+        .symbol-info dl dd {margin: 12px 0 20px 368px;}
+            .symbol-info dl dd h3 {font-size: 22px; font-weight: normal;margin: 0 0 4px;}
+            .symbol-info dl dd p {font-size: 15px;line-height: 25px; margin: 0 0 24px;}
+    .symbol-detals {overflow: hidden; margin: 0 0 0 -61px;padding: 0 0 0px;}
+        .symbol-detal {float: left; width: 182px; margin: 0 0 0 60px; overflow: hidden; text-align: center;}
+            .symbol-detal-img {margin: 0 0 15px; width: 182px; height: 182px;}
+                .symbol-detal-img img {vertical-align: top;}
+            .symbol-detal h3 {font-weight: bold; font-size: 16px;margin: 0 0 1px;}
+            .symbol-detal p {text-align: left; margin: 0 0 10px; font-size: 13px; line-height: 18px;}
+.technology {background: #fdfdfb;padding: 71px 0 25px; overflow: hidden;min-height: 638px;}
+    .technology .wr {position: relative;}
+    .technology-txt {position: relative; z-index: 10;width: 408px;}
+        .technology-txt h2 {font-size: 40px;margin: 0 0 15px; font-weight: normal;}
+        .technology-txt p {font-size: 17px; line-height: 27px; margin: 0 0 10px;}
+    .technology-comment {background: #f8f8f4;width: 246px; border: 1px solid #cbb1a5;padding: 23px 20px 7px; position: relative; z-index: 10;margin: 37px 0 0;}
+        .technology-comment p {margin: 0 0 10px; font-size: 14px; line-height: 21px;}
+    .technology-img {position: absolute;top: -38px; left: 250px; z-index: 1;}
+.basket-slide {background: #6b4925 url(../img/basket-slide.jpg) 0 0 repeat-x;padding: 82px 0 0; color: #fff;}
+    .basket-slide-txt {text-align: center; width: 600px;margin: 0 auto 67px;padding: 0 0 0 24px;}
+        .basket-slide-txt h2 {text-align: center; font-size: 40px;margin: 0 0 14px;}
+        .basket-slide-txt p {font-size: 17px; line-height: 27px; margin: 0 0 15px;}
+    .basket-slide-cont {position: relative;min-height: 529px;padding: 146px 0 0 551px;}
+        .basket-slide-img {position: absolute; top: 0; left: 0;}
+    .tovar-detals {font-size: 15px; line-height: 21px;padding: 0 0 48px;}
+    .tovar-comment {font-size: 13px;padding: 0 0 15px; width: 287px;line-height: 17px;}
+    .tovar-table {width: 256px;}
+        .tovar-table h4 {display: block; width: 128px;margin: 0 auto -3px; border-bottom: 1px solid #b59d80; font-weight: normal; text-align: center;font-size: 10px;padding-bottom: 3px;}
+        .tovar-table table {width: 331px; margin-left: -13px;}
+            .tovar-table table td {padding: 2px 0 2px 7px; font-size: 13px; color: #ecd4b9;}
+                .tovar-table table tr td:first-child {padding-left: 13px;}
+                .tovar-table table tr:nth-child(2n) td {background: #ac906f;}
+    .basket-form {text-align: center; padding: 0 0 30px;}
+    .basket-soc {padding: 0 0 48px; text-align: center;}
+
+.footer {background: #4f3520; height: 61px; color: #c7a06e;}
+    .footer-left {float: left;padding: 25px 0 0; font: normal 11px 'Times New Roman';margin-left: -17px;}
+    .footer-right {float: right;padding: 28px 0 0;font: normal 11px 'Times New Roman';text-transform: uppercase;margin-right: -20px;}
+        .footer-right a {text-decoration: none; color: #c7a06e; border-bottom: 1px dashed #c7a06e;}
+        .footer-right a:hover {border-color: transparent;}
+    .footer-center {text-align: center;padding: 19px 0 0 112px;}
+
+
+/*---------- popup ---------*/
+.popup_bg   {position:fixed; left:0; top:0; width:100%; height:100%; background:#000; z-index:99; display:none;
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+-moz-opacity: 0.4;
+-khtml-opacity: 0.4;
+opacity: 0.4;
+}
+.popup  {position:absolute !important; top:50%; left:50%; margin:-237px 0 0 -338px; margin-top: 0 !important; width:677px; height:474px; z-index:100; display:none;}
+body .popup {position:absolute !important; margin-top: 0 !important;}
+.application_form   {background:url(../img/popups/application_form.png) 0 0 no-repeat;}
+    .popup_close    {position:absolute; top:-20px; right:-20px; background:url(../img/popups/close.png) 0 0 no-repeat; width:16px; height:16px;}
+    .popup_close:hover  {background-position: -16px 0;}
+    .popup_phone    {text-align:center; padding:50px 0 0; height:83px;}
+    .popup_input    {background:url(../img/popups/popup_input.png) 0 0 no-repeat; width:452px; height:32px; margin:0 auto 14px;}
+        .popup_input input  {padding:0; background:none; border:0; margin:8px 0 0 11px; width:425px; font-size:15px; color:#c8a06e; font-family:"Times New Roman", Times, serif;}
+    .popup_texteria {background:url(../img/popups/popup_texteria.png) 0 0 no-repeat; width:452px; height:32px; margin:0 auto; height:134px;}
+        .popup_texteria textarea    {padding:0; background:none; border:0; margin:8px 0 0 11px; width:425px; font-size:15px; color:#c8a06e; font-family:"Times New Roman", Times, serif; height:115px; resize:none;}
+        .popup_button   {display:block; background:url(../img/popups/popup_button.png) 0 0 no-repeat; width:185px; height:84px; margin:0 auto; padding:28px 0 0;}
+            .popup_button a {display:block; width:113px; height:42px; margin:0 auto;}
+        .popup_button.active    {background-position:0 -112px;}
+    .application_form_message   {background:url(../img/popups/application_form_message.png) center center no-repeat; width:100%; height:100%; display:none;}
+
+.trademark  {background:url(../img/popups/trademark.png) 0 0 no-repeat; width:777px; height:624px; margin:-312px 0 0 -388px;}
+
+
+.horoscope {padding: 0 0 20px;}
+    .horoscope p {margin: 0 0 20px; font-size: 17px; line-height: 28px;}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
