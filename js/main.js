@@ -30,19 +30,19 @@ $(document).ready(function() {
 			inp_but_text = --inp_but_text;
 			$('.inp_but_text').val(inp_but_text);
 		}
-		$('.maika_bascet_message').animate({ top : 39 }, 1000);
+		$('.maika_bascet_message').animate({ top : 39 }, 500);
 		return false;
 	});
 	$('.inp_but_plus').click(function() {
 		inp_but_text = ++inp_but_text;
 		$('.inp_but_text').val(inp_but_text);
-		$('.maika_bascet_message').animate({ top : 39 }, 1000);
+		$('.maika_bascet_message').animate({ top : 39 }, 500);
 		return false;
 	});
 	
 	$('.maika_size_namber span').click(function() {
 		$('.maika_size_list').fadeIn();
-		$('.maika_bascet_message').animate({ top : 39 }, 1000);
+		$('.maika_bascet_message').animate({ top : 39 }, 500);
 	});
 	
 	$('.maika_size_list a').click(function() {
@@ -54,7 +54,7 @@ $(document).ready(function() {
 	});
 	
 	$('.maika_price_but').click(function() {
-		$('.maika_bascet_message').animate({ top : 72 }, 1000);
+		$('.maika_bascet_message').animate({ top : 72 }, 500);
 		return false;
 	});
 
