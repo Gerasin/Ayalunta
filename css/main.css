@@ -240,6 +240,47 @@ body .popup {position:absolute !important; margin-top: 0 !important;}
 .horoscope {padding: 0 75px 20px;}
     .horoscope p {margin: 0 0 20px; font-size: 17px; line-height: 28px;}
 
+.maika_price    {width: 414px; margin:0 auto; padding:0 0 58px; position:relative; z-index:30; font-style:normal;}
+    .maika_price_top    {margin-top:160px; margin-bottom:-160px;}
+        .maika_price_info   {text-align:center; color:#fff; font-size:30px; padding:0 0 20px; font-weight:normal;}
+            .inp_but    {float:left;padding: 11px 14px 0 21px;}
+                .inp_but_minus  {display:block; float:left; background:url(../img/ico_input.png) 0 0 no-repeat; width:20px; height:28px; margin-top:-1px;}
+                .inp_but_minus:hover    {background-position:0 -35px;}
+                .inp_but_minus:active   {background-position:0 -70px;}
+                .inp_but_text   {float:left; text-align:center; border:0; background:none;width: 52px; padding:0; font:15px "Times New Roman", Times, serif; color:#d0a26b;margin: 5px 0 0;}
+                .inp_but_plus   {display:block; float:left; background:url(../img/ico_input.png) -72px 0 no-repeat; width:20px; height:28px; margin-top:-1px;}
+                .inp_but_plus:hover {background-position:-72px -35px;}
+                .inp_but_plus:active    {background-position:-72px -70px;}
+        .maika_price_form   {height:34px; position:relative; z-index:2;}
+            .maika_price_form_cont  {float:left;height: 48px;width: 195px; background:url(../img/maika_price_form_cont.png) 0 0 no-repeat; padding:0 0 8px 4px;}
+            .maika_price_but    {display:block; float:left;width: 202px;height: 49px; background:url(../img/maika_price_but.png) 0 0 no-repeat;}
+            .maika_price_but:hover  {background-position:0 -70px;}
+            .maika_price_but:active {background-position:0 -140px;}
+        .maika_size {float:left; position:relative; font-size: 20px; height:27px;}
+            .maika_size a   {color:#d0a26b; text-decoration:none;}
+            .maika_size_namber  {color:#d0a26b; padding:10px 0 0; text-align:center; width:57px;position: relative;z-index: 10;}
+                .maika_size_namber span {border-bottom:1px dotted #9f7e58; cursor:pointer;}
+                .maika_size_namber span:hover   {border-bottom:1px dotted #fff0e1; color:#fff0e1;}
+            .maika_size_list    {
+                position:absolute;
+                background: #780a0a;
+                bottom: -35px;
+                overflow:hidden;
+                width:57px;
+                display:none;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                padding: 0 0 31px;
+                }
+                .maika_size_list li {list-style:none;}
+                    .maika_size_list a  {display:block; text-align:center; padding:3px 0 4px;}
+                    .maika_size_list a:hover    {background:#c80000; color: #fff;}
+                    .maika_size_list a.active   {color:#fff0e1;}
+        .maika_bascet_message   {position:absolute; background:url(../img/maika_bascet_message.png) 0 0 no-repeat; text-align:center;width: 274px;height: 31px; font-size:14px; text-align:center;padding: 7px 0 0;margin: 33px 0 0 67px; top:39px; z-index:1; color: #debd94;}
+            .maika_bascet_message a {color:#debd94; text-decoration:none; border-bottom: 1px solid #a05f4b;}
+            .maika_bascet_message a:hover   {border-color:#fff0e1; color:#fff0e1;}
+
 
 
 /* ==========================================================================
