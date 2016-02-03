@@ -308,6 +308,23 @@ body {min-width: 1000px; font: 14px 'PT Serif', serif;}
     .shop-final {text-align: center; font-family: 'Times New Roman';padding: 140px 0 195px;}
         .shop-final h2 {font-size: 36px; font-weight: normal;margin: 9px 0 20px;}
         .shop-final p {font-size: 22px; line-height: 29px; margin: 0;}
+    .horoscope-logo {width: 864px; border: solid 5px #5b3c28; margin: 0 auto 66px; padding: 0 0 22px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #ece0cd;
+    -webkit-box-shadow: 0 20px 51px rgba(111,0,20,.75);
+    -moz-box-shadow: 0 20px 51px rgba(111,0,20,.75);
+    box-shadow: 0 20px 51px rgba(111,0,20,.75); }
+        .horoscope-logo-img {float: left; padding: 14px 0 0 27px; width: 240px;}
+        .horoscope-logo-txt {margin: 0 30px 0 300px; font-family: 'PT Serif', serif;padding: 18px 0 0;}
+            .horoscope-logo-txt h3 {font-size: 22px; font-weight: normal;margin: 0 0 11px;}
+            .horoscope-logo-txt p {font-size: 15px; line-height: 23px;margin: 0 0 15px;}
+        .horoscope-btn {display: inline-block; height: 26px; line-height: 26px; background-color: #6f0014; padding: 0 15px; text-decoration: none; color: #fff;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px; }
+        .horoscope-btn:hover {background: #c3a679;}
 
 
 .footer {background: #4f3520; height: 61px; color: #c7a06e;}

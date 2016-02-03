@@ -181,7 +181,14 @@ $(document).ready(function() {
 	})
 	
 
-
+	// Чек оферты
+	$('.oferta input, .oferta label').click(function(){
+		if($('.oferta input').prop("checked")) {
+			$('.basket-shop-nav').addClass('active');
+		} else {
+			$('.basket-shop-nav').removeClass('active');
+		}
+	})
 	
 
 
