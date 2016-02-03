@@ -309,9 +309,9 @@ body {min-width: 1000px; font: 14px 'PT Serif', serif;}
         .shop-final h2 {font-size: 36px; font-weight: normal;margin: 9px 0 20px;}
         .shop-final p {font-size: 22px; line-height: 29px; margin: 0;}
     .horoscope-logo {width: 864px; border: solid 5px #5b3c28; margin: 0 auto 66px; padding: 0 0 22px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
     background-color: #ece0cd;
     -webkit-box-shadow: 0 20px 51px rgba(111,0,20,.75);
     -moz-box-shadow: 0 20px 51px rgba(111,0,20,.75);
