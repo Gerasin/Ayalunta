@@ -21,7 +21,22 @@ $(document).ready(function() {
 		loadPopup('.js_trademark');
 	});  
 
+	$(".oferta_link").click(function(e){ 
+		e.preventDefault();
+		loadPopup('.popup_oferta_in');
+	}); 
 
+	if($('.scroll-pane').length){
+		$('.scroll-pane').jScrollPane({
+			autoReinitialise : true,
+			autoReinitialiseDelay : 1000
+		})
+	};
+
+
+	var bodyHeight = $(window).height() - 340;
+	$('.basket-shop').css({'min-height' : bodyHeight})
+	
 
 	var inp_but_text = $('.inp_but_text').val()
 	
@@ -103,12 +118,115 @@ $(document).ready(function() {
 		payIndex = ++payIndex;
 		$(this).parent().find('input').val(payIndex);
 		return false;
+	});
+
+
+
+	// Валидация формы
+	$('.js-valid').focusout(function(){
+		var validText = $(this).val().length;
+		if(validText < 2) {
+			$(this).addClass('error-inp');
+		} else {
+			$(this).removeClass('error-inp');
+			errorLnk();
+		}
+	});
+	$('.js-phone').focusout(function(){
+		var validText = $(this).val().length;
+		if(validText < 18) {
+			$(this).addClass('error-inp');
+		} else {
+			$(this).removeClass('error-inp');
+			errorLnk();
+		}
+	});
+	$('.js-valid-mail').focusout(function(){
+		var validText = $(this).val().length;
+		if(validText < 2) {
+			$(this).addClass('error-inp');
+		} else {
+			var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+            if(pattern.test($(this).val())){
+                $(this).removeClass('error-inp');
+                $(this).parents('.form-inp').removeClass('item-error');
+                errorLnk();
+            } else {
+               	$(this).addClass('error-inp');
+            }
+		}
+	});
+	$('.js-valid-home').focusout(function(){
+		var validText = $(this).val().length;
+		if(validText < 1) {
+			$(this).addClass('error-inp');
+		} else {
+			$(this).removeClass('error-inp');
+			errorLnk();
+		}
+	});
+
+	if($('.js-phone').length) {
+		$('.js-phone').mask("+7 (000) 000-00-00", {placeholder: "+7 (___) ___-__-__"});
+	};
+
+	if($('.js-valid-home').length) {
+		$('.js-valid-home').mask("0000", {placeholder: ""});
+	};
+
+	
+
+	$('.js-valid, .js-valid-mail, .js-phone').keyup(function(){
+		errorLnk()
 	})
+	
+
 
 	
 
 
 });
+
+
+function errorLnk() {
+	var validError = 0;
+	$('.js-valid').each(function(){
+		var validText = $(this).val().length;
+		if(validText < 2) { validError = ++validError } else {
+			$(this).removeClass('error-inp');
+		}
+	});
+	$('.js-valid-home').each(function(){
+		var validText = $(this).val().length;
+		if(validText < 1) { validError = ++validError } else {
+			$(this).removeClass('error-inp');
+		}
+	});
+	$('.js-phone').each(function(){
+		var validText = $(this).val().length;
+		if(validText < 18) { validError = ++validError } else {
+			$(this).removeClass('error-inp');
+		}
+	});
+
+	$('.js-valid-mail').each(function(){
+		var validText = $(this).val().length;
+		if(validText < 2) { validError = ++validError } else {
+			var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+            if(pattern.test($(this).val())){
+                $(this).removeClass('error-inp');
+            } else {
+               	validError = ++validError
+            }
+		}
+	});
+	if(validError == 0) {
+		$('.val-btn').addClass('active');
+	} else {
+		$('.val-btn').removeClass('active');
+	}
+
+}
 
 
 

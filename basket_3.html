@@ -42,11 +42,11 @@
                     </div>
                     <div class="delivery_address">
                         <div class="delivery-form">
-                            <div class="delivery-form-item"><input type="text" class="input-st" placeholder="Имя" style="width: 320px;"></div>
-                            <div class="delivery-form-item"><input type="text" class="input-st" placeholder="Фамилия" style="width: 320px;"></div>
-                            <div class="delivery-form-item"><input type="text" class="input-st" placeholder="+7 (___) ___-__-__" style="width: 195px;"></div>
+                            <div class="delivery-form-item"><input type="text" class="input-st js-valid" placeholder="Имя" style="width: 320px;"></div>
+                            <div class="delivery-form-item"><input type="text" class="input-st js-valid" placeholder="Фамилия" style="width: 320px;"></div>
+                            <div class="delivery-form-item"><input type="text" class="input-st js-phone" placeholder="+7 (___) ___-__-__" style="width: 195px;"></div>
                             <div class="delivery-form-item">
-                                <input type="text" class="input-st" placeholder="E-mail" style="width: 195px;">
+                                <input type="text" class="input-st js-valid-mail" placeholder="E-mail" style="width: 195px;">
                                 <div class="delivery-form-txt">
                                     На указаную почту придет письмо с номерои вашего заказа
                                 </div>
@@ -60,9 +60,9 @@
                                     <option value="">Санкт-Петербург</option>
                                 </select>
                             </div>
-                            <div class="delivery-form-item"><input type="text" class="input-st" placeholder="Улица" style="width: 378px;"></div>
+                            <div class="delivery-form-item"><input type="text" class="input-st js-valid" placeholder="Улица" style="width: 378px;"></div>
                             <div class="delivery-form-item delivery-home">
-                                <input type="text" class="input-st" placeholder="Дом">
+                                <input type="text" class="input-st js-valid-home" placeholder="Дом">
                                 <input type="text" class="input-st" placeholder="Корп.">
                                 <input type="text" class="input-st" placeholder="Стр.">
                                 <input type="text" class="input-st" placeholder="Кв.">
@@ -73,7 +73,7 @@
                         </div>
                         
                     </div>
-                    <div class="basket-shop-nav nav-border">
+                    <div class="basket-shop-nav nav-border val-btn">
                         <a href="" class="btn-baskt"></a> К выбору способу оплаты
                     </div>
                     
@@ -92,12 +92,15 @@
         <div class="popup trademark js_trademark">
             <a href="" class="popup_close"></a>
         </div>
-        
+
+
+         
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
         <script src="js/main.js"></script>
 
     </body>

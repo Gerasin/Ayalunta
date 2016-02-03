@@ -49,17 +49,18 @@
                             <div class="delivery-min-map">
                                 <div class="delivery-map"><script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=HZD78S26BpV30a1ZfNP5HU5DbNpxSYSm&width=407&height=307&lang=ru_RU&sourceType=constructor"></script></div>
                                 <div class="delivery-adres">
-                                    <div class="delivery-city">Москва</div>
-                                    <img src="img/metro.gif" alt="">  Тульская, ул. Павловская, с 9 до 18, кроме выходных
+                                    <div class="delivery-city">Москва <span>с 10:00 до 22:00 ежедневно</span></div>
+                                    <img src="img/metro.gif" alt="">м.  Тульская, ул. Павловская, 18 <br>
+                                    <img src="img/orange_metro.gif" alt=""> м.  Китай-город, <img src="img/red_metro.gif" alt="">м.  Чистые пруды, ул. Покровка, 4
                                 </div>
                                 <div class="delivery-form">
-                                    <div class="delivery-form-item"><input type="text" class="input-st" placeholder="Имя"></div>
-                                    <div class="delivery-form-item"><input type="text" class="input-st" placeholder="Фамилия"></div>
-                                    <div class="delivery-form-item"><input type="text" class="input-st" placeholder="+7 (___) ___-__-__" style="width: 195px;"></div>
-                                    <div class="delivery-form-item"><input type="text" class="input-st" placeholder="E-mail" style="width: 195px;"></div>
+                                    <div class="delivery-form-item"><input type="text" class="input-st js-valid" placeholder="Имя"></div>
+                                    <div class="delivery-form-item"><input type="text" class="input-st js-valid" placeholder="Фамилия"></div>
+                                    <div class="delivery-form-item"><input type="text" class="input-st js-phone" placeholder="+7 (___) ___-__-__" style="width: 195px;"></div>
+                                    <div class="delivery-form-item"><input type="text" class="input-st js-valid-mail" placeholder="E-mail" style="width: 195px;"></div>
                                 </div>
                             </div>
-                            <div class="basket-shop-nav nav-border">
+                            <div class="basket-shop-nav nav-border val-btn">
                                 <a href="" class="btn-baskt"></a> К выбору способу оплаты
                             </div>
                         </div>
@@ -99,7 +100,7 @@
                                     Обращаем внимание: при заказе на сумму свыше 3500 рублей курьерская доставка по Москве, Санкт-Петербургу бесплатна.
                                 </div>
                             </div>
-                            <div class="basket-shop-nav nav-border">
+                            <div class="basket-shop-nav nav-border active">
                                 <a href="" class="btn-baskt"></a> К адресу доставки
                             </div>
                        </div>
@@ -126,6 +127,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
         <script src="js/main.js"></script>
 
     </body>
