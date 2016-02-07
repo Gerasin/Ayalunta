@@ -529,6 +529,18 @@ body .popup.popup_reg {position:absolute !important; margin-top: 0 !important;}
     .oferta_close:hover, .oferta_popup_close:hover {color: #fed7a5;}
         .oferta_close:hover img, .oferta_popup_close:hover img  {background-position: -16px 0;}
 
+
+
+.basket-total {float: left; padding: 0 0 0 57px; position: relative; font-size: 17px; color: #9b7851; font-family: 'Times New Roman'; margin-top: 65px;}
+    .basket-total:before {position: absolute; left: 0; top: 3px; content: ' '; width: 42px; height: 42px; background: url(../img/total.png) 0 0 no-repeat;}
+    .basket-phone {font-size: 22px; color: #010101;}
+    .basket-total a {color: #6f0014; text-decoration: none; border-bottom: 1px solid #a46b73;}
+    .basket-total a:hover {color: #f00000; border-color: #da7a89;} 
+    .basket-total.active:before {background: url(../img/total-active.png) 0 0 no-repeat;}
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
