@@ -139,7 +139,7 @@ body {min-width: 1000px; font: 14px 'PT Serif', serif;}
     background-image: -ms-linear-gradient(bottom, #f8f8f5, #d8d5d1 78%, #bebcb8);
     background-image: linear-gradient(to top, #f8f8f5, #d8d5d1 78%, #bebcb8);
 }
-    .logo {padding: 16px 0 28px; text-align: center;}
+    .logo {padding: 16px 0 28px; text-align: center; width: 198px; margin: 0 auto;}
         .logo img {vertical-align: top;}
     .symbol-header {text-align: center;margin: 0 0 45px; font: normal normal 60px/60px 'PT Serif', serif;}
         .symbol-header sup {vertical-align: top; font-size: 20px; position: relative; top: 10px;}
