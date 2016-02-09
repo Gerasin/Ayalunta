@@ -166,6 +166,10 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.js-phone, .js-valid, .js-valid-mail, .js-valid-home').keyup(function(){
+		errorLnk();
+	});
+
 	if($('.js-phone').length) {
 		$('.js-phone').mask("+7 (000) 000-00-00", {placeholder: "+7 (___) ___-__-__"});
 	};
@@ -188,7 +192,13 @@ $(document).ready(function() {
 		} else {
 			$('.basket-shop-nav').removeClass('active');
 		}
-	})
+	});
+
+
+	$('select').selectik({
+	    minScrollHeight: 20,
+	    maxItems: 10
+	});
 	
 
 
