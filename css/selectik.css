@@ -146,7 +146,7 @@
 
 .select-list .selected,
 .select-list li:hover {
-    color: #ccc
+    color: red
 }
 
 .select-list li.disabled {
