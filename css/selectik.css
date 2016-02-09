@@ -115,14 +115,19 @@
 
 .custom-select .custom-text:after {
     font-size: 15px;
-    position: relative;
-    top: -6px;
-    right: 12px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
     display: block;
-    content: '̬';
+    content: ' ';
     float: right;
     width: 6px;
     z-index: 2;
+    background: url(../img/pointer.png) 0 0 no-repeat;
+    width: 10px; height: 6px;
+}
+.custom-select.active .custom-text:after {
+    background-position: 0 -10px;
 }
 
 
